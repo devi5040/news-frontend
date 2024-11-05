@@ -68,14 +68,16 @@ function App() {
             return (
               <div
                 key={news.id}
-                className="mx-10 my-5 border shadow-lg rounded-md h-[120vh] md:h-[100vh] justify-center items-start px-4 py-3"
+                className="mx-10 my-5 border shadow-lg rounded-md h-[140vh] md:h-[120vh] justify-center items-start px-4 py-3"
               >
                 <div className="space-y-4 my-5">
-                  <h3 className="text-2xl font-semibold">{news.author}</h3>
+                  <h3 className="text-2xl font-semibold">{news.title}</h3>
                   <h4 className="text-md text-justify">{news.content}</h4>
+                  <h4 className="text-md font-semibold">-{news.author}</h4>
                 </div>
                 <h5 className="text-md my-2 font-bold">
-                  {news.date}&&&{news.time}
+                  Date: {news.date} <br></br>Time:
+                  {news.time}
                 </h5>
                 <img
                   src={news.imageUrl}
