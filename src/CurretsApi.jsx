@@ -14,7 +14,7 @@ function CurretsApi() {
   const fetchNews = async () => {
     try {
       const response = await axios.get(
-        `https://api.currentsapi.services/v1/latest-news?apiKey=GV49U_OCZYsrGPFY8ZI60YRuRWBZePA7d-CIz7YC4q3xEWFQ`
+        `https://api.currentsapi.services/v1/latest-news?apiKey=GV49U_OCZYsrGPFY8ZI60YRuRWBZePA7d-CIz7YC4q3xEWFQ&country=in`
       );
 
       const newsData = response.data.news;
