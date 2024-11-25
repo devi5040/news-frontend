@@ -16,6 +16,12 @@ function Header() {
       >
         G-news
       </Link>
+      <Link
+        className="border px-5 py-2 bg-[#4dd4ff] opacity-50 duration-300 hover:opacity-100 "
+        to="/currents"
+      >
+        Currents API
+      </Link>
     </div>
   );
 }
