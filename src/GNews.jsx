@@ -15,7 +15,7 @@ function GNews() {
 
   // Build the API URL for fetching all articles
   const buildApiUrl = () => {
-    return `https://gnews.io/api/v4/search?country=in&lang=en&token=${token}&max=100`;
+    return `https://gnews.io/api/v4/search?country=in&lang=en&token=${token}&max=100&q=None`;
   };
 
   // Fetch news from the API
